@@ -26,8 +26,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests().antMatchers("/cart").authenticated().and().formLogin().loginPage("/signin")
-                .loginProcessingUrl("/login").and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/signout"))
-                .logoutSuccessUrl("/");
+        http.authorizeRequests().antMatchers("/cart").authenticated().antMatchers("/charge").authenticated().and()
+                .formLogin().loginPage("/signin").loginProcessingUrl("/login").and().logout()
+                .logoutRequestMatcher(new AntPathRequestMatcher("/signout")).logoutSuccessUrl("/");
     }
 }
