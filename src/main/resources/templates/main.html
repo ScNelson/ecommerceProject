@@ -16,7 +16,15 @@
  
       <div class="container">
           <div class="row">
-              <!--Fill this part in-->
+            <div class="card col-md-3 small-product-card"  th:each="product:${products}">
+                <a  th:href="@{/product/{id}(id=${product.getId()})}"><img th:alt="${product.name}" th:src="@{${product.image}}" class="card-img"/></a>
+                <div class="card-body">
+                    <div class="card-title">
+                        <h4 th:text="${product.name}"></h4>
+                        <small th:text="${product.getBrand()}"></small>
+                    </div>
+                </div>    
+            </div>
           </div>
       </div>
   </main>
