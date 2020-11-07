@@ -35,16 +35,16 @@ public class MainController {
 
             List<Product> newProducts = new ArrayList<Product>();
 
-            newProducts.add(new Product(4, (float) 1500.00, "DSI Prophet 12 Synthesizer", "DSI Prophet 12", "Dave Smith Instruments", "Synthesizer",
+            newProducts.add(new Product(4, (float) 2999.99, "DSI Prophet 12 Synthesizer", "DSI Prophet 12", "Dave Smith Instruments", "Synthesizer",
                     "images/P12.png"));
 
-            newProducts.add(new Product(3, (float) 1000.00, "Moog Voyager Synthesizer", "Moog Voyager", "Moog", "Synthesizer",
+            newProducts.add(new Product(3, (float) 2995.00, "Moog Voyager Synthesizer", "Moog Voyager", "Moog", "Synthesizer",
                     "images/MoogVoyager.jpg"));
 
-            newProducts.add(new Product(12, (float) 800.00, "Waldorf Blofeld Digital Synthesizer, Black", "Waldorf Blofeld", "Waldorf", "Synthesizer",
+            newProducts.add(new Product(12, (float) 519.99, "Waldorf Blofeld Digital Synthesizer, Black", "Waldorf Blofeld", "Waldorf", "Synthesizer",
                     "images/Blofeld.jpg"));
 
-            newProducts.add(new Product(7, (float) 700.00, "Elektron Analog Rytm Drum Machine", "Elektron Rytm", "Elektron", "Drum Machine",
+            newProducts.add(new Product(7, (float) 1699.00, "Elektron Analog Rytm Drum Machine", "Elektron Rytm", "Elektron", "Drum Machine",
                     "images/Rytm.jpg"));
 
             for (Product product : newProducts) {
