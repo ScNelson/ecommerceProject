@@ -24,8 +24,8 @@ public class Product {
     public Product() {
     }
 
-    public Product(Long id, int quantity, double price, String description, String name, String brand, String category, String image) {
-        this.id = id;
+    public Product(int quantity, double price, String description, String name, String brand, String category,
+            String image) {
         this.quantity = quantity;
         this.price = price;
         this.description = description;
@@ -34,7 +34,6 @@ public class Product {
         this.category = category;
         this.image = image;
     }
-
 
     public Long getId() {
         return this.id;
@@ -102,15 +101,8 @@ public class Product {
 
     @Override
     public String toString() {
-        return "{" +
-            " id='" + getId() + "'" +
-            ", quantity='" + getQuantity() + "'" +
-            ", price='" + getPrice() + "'" +
-            ", description='" + getDescription() + "'" +
-            ", name='" + getName() + "'" +
-            ", brand='" + getBrand() + "'" +
-            ", category='" + getCategory() + "'" +
-            ", image='" + getImage() + "'" +
-            "}";
+        return "{" + " id='" + getId() + "'" + ", quantity='" + getQuantity() + "'" + ", price='" + getPrice() + "'"
+                + ", description='" + getDescription() + "'" + ", name='" + getName() + "'" + ", brand='" + getBrand()
+                + "'" + ", category='" + getCategory() + "'" + ", image='" + getImage() + "'" + "}";
     }
 }
